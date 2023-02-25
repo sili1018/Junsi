@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="leftMenu" stylesheets="@../css/leftmenu01.css" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.junsi.fxmlcontroller.LeftMenu01">
+
+   <children>
+      <VBox prefWidth="200.0" />
+      <HBox onMouseClicked="#item01Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="首页" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item02Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="学员" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item03Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="教师" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item04Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="课程" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item05Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="课表" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item06Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="统计" />
+         </children>
+      </HBox>
+      <HBox onMouseClicked="#item07Click" styleClass="leftMenuItem">
+         <children>
+            <Label text="资料" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

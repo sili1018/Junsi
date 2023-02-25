@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.junsi.fxmlcontroller.Tongji">
+   <children>
+      <AnchorPane prefHeight="256.0" prefWidth="600.0"  styleClass="bg" stylesheets="@../css/addStudent.css">
+         <children>
+            <Label layoutX="134.0" layoutY="53.0" text="学员人数" />
+            <Label layoutX="134.0" layoutY="110.0" text="教师人数" />
+            <Label layoutX="120.0" layoutY="162.0" text="开设课程门数" />
+            <Label fx:id="coursenum" layoutX="223.0" layoutY="162.0" />
+            <Label fx:id="teachernum" layoutX="223.0" layoutY="110.0" />
+            <Label fx:id="studentnum" layoutX="223.0" layoutY="53.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

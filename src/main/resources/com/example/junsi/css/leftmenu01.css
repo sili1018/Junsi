@@ -1,0 +1,17 @@
+/* 设置左侧菜单最外层容器样式*/
+.leftMenu{
+    -fx-background-color: #293544; /*背景颜色*/
+    /*USE_COMPUTED_SIZE*/
+
+}
+.leftMenuItem{  /*设置左侧菜单项容器样式*/
+    -fx-padding: 20px;
+    -fx-cursor: hand;  /* 手的形状*/
+}
+.leftMenuItem:hover{ /* 鼠标触碰变色  */
+    -fx-background-color: #c60707;
+}
+.leftMenuItem .label{
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff;
+}

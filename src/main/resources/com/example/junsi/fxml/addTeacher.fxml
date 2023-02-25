@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bg" stylesheets="@../css/addStudent.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.junsi.fxmlcontroller.AddTeacher">
+   <children>
+      <Label layoutX="134.0" layoutY="53.0" text="教师号" />
+      <Label layoutX="134.0" layoutY="110.0" text="教师名" />
+      <Label layoutX="134.0" layoutY="172.0" text="年龄" />
+      <Label layoutX="134.0" layoutY="235.0" text="课程名" />
+
+      <TextField fx:id="txtTno" layoutX="183.0" layoutY="48.0" text="请输入教师号" />
+      <TextField fx:id="txtTname" layoutX="183.0" layoutY="105.0" text="请输入教师名" />
+      <TextField fx:id="txtAge" layoutX="183.0" layoutY="167.0" text="请输入年龄" />
+      <TextField fx:id="txtCname" layoutX="180.0" layoutY="229.0" text="请输入课程名" />
+
+      <Label fx:id="msgTno" layoutX="183.0" layoutY="79.0" styleClass="errorText" text="" />
+      <Label fx:id="msgTname" layoutX="183.0" layoutY="263.0" styleClass="errorText" text="" />
+      <Label fx:id="msgAge" layoutX="183.0" layoutY="142.0" styleClass="errorText" text="" />
+      <Label fx:id="msgCname" layoutX="183.0" layoutY="200.0" styleClass="errorText" text="" />
+      <Button fx:id="editStu" layoutX="170.0" layoutY="292.0" mnemonicParsing="false" onAction="#btnOk" styleClass="btnOk" text="提交">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

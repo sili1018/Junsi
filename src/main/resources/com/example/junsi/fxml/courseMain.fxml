@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="404.0" prefWidth="488.0" stylesheets="@../css/studentMain.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.junsi.fxmlcontroller.CourseMain">
+   <children>
+      <HBox styleClass="hboxTop">
+         <children>
+            <TextField fx:id="txtKey" styleClass="txtKey" />
+            <Button mnemonicParsing="false" onAction="#findClick" styleClass="btnFind" text="查询" />
+            <Button mnemonicParsing="false" onAction="#add" styleClass="btnAdd" text="添加">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TableView fx:id="tbCourse" prefHeight="339.0" prefWidth="468.0" tableMenuButtonVisible="true">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="tcStun" prefWidth="55.0" text="课程号" />
+            <TableColumn fx:id="tcName" prefWidth="139.0" text="课程名" />
+            <TableColumn fx:id="tcTname" prefWidth="138.0" text="总课时" />
+         </columns>
+         <contextMenu>
+            <ContextMenu>
+               <items>
+                  <MenuItem fx:id="editStu" mnemonicParsing="false" onAction="#btnEdit" text="编辑" />
+                  <MenuItem mnemonicParsing="false" onAction="#delClick" text="删除" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>

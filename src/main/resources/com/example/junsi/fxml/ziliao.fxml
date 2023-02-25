@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--BorderPane划分为了5个区域:上、下、左、右、中的面板容器-->
+
+<BorderPane fx:id="bpane" prefHeight="253.0" prefWidth="233.0" style="-fx-background-color: #019bb5;"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.junsi.fxmlcontroller.Ziliao">
+    <!--定义中部-->
+    <center>
+
+    </center>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#play" text="播放" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Label text="钧思培训机构" textAlignment="CENTER" textFill="blue" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="50.0" />
+         </font></Label>
+   </top>
+</BorderPane>

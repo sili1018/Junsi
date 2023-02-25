@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bg" stylesheets="@../css/addStudent.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.junsi.fxmlcontroller.Login">
+   <children>
+      <Label layoutX="120.0" layoutY="124.0" text="账号" />
+      <Label layoutX="120.0" layoutY="206.0" text="密码" />
+
+      <TextField fx:id="txtAccount" layoutX="169.0" layoutY="118.0" text="请输入管理员账号" />
+      <TextField fx:id="txtPassword" layoutX="169.0" layoutY="200.0" text="请输入管理员密码" />
+      <Button fx:id="editStu" layoutX="192.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnOk" styleClass="btnOk" text="登录">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="214.0" layoutY="33.0" prefHeight="30.0" prefWidth="75.0" text="管理员登录" />
+   </children>
+</AnchorPane>
